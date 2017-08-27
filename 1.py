@@ -42,4 +42,4 @@ for i in range(_thread):#线程开始工作
         run.setDaemon(True)#这个True是为worker.start设置的，如果没有设置的话会挂起的，因为check是使用循环实现的
         run.start()     #开始线程的工作
 queue.join()#线程队列执行关闭
-print "ping 工作已完成 %s" % time.ctime() 
+print "=====ping 工作已完成===== %s" % time.ctime() 
