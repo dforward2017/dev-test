@@ -26,9 +26,9 @@ def runcheck():
         #print data.stdout.readlines()
         data.wait()
         if data.returncode == 0:
-            print "%s:正常运行" % ip
+            print "%s:is alive" % ip
         else:
-            print "%s:停止工作" % ip
+            print "%s:is dead" % ip
         
         data1.wait()
         if data1.returncode == 0:
